@@ -20,7 +20,7 @@ sky = SubResource("Sky_0jq2n")
 glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pc75e"]
-albedo_color = Color(0.254902, 0.254902, 0.254902, 1)
+albedo_color = Color(0.305882, 0.215686, 0.156863, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u74ks"]
 albedo_color = Color(0, 0.294118, 0.0156863, 1)
@@ -28,10 +28,19 @@ albedo_color = Color(0, 0.294118, 0.0156863, 1)
 [node name="Node3D" type="Node3D"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, -66.7458, 19.9974, 0)
-visible = false
-light_color = Color(0.984314, 0.878431, 1, 1)
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 68.1653, 1.39469, 0)
+light_color = Color(0.298039, 0, 0.470588, 1)
 shadow_enabled = true
+shadow_bias = 1.0
+directional_shadow_split_1 = 1.0
+directional_shadow_split_2 = 1.0
+sky_mode = 1
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, -65.6268, 33.3774, 0)
+light_color = Color(0.298039, 0, 0.470588, 1)
+shadow_enabled = true
+sky_mode = 1
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_do4ws")
@@ -387,3 +396,7 @@ material = SubResource("StandardMaterial3D_u74ks")
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="Trees/Tree10"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.75825, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.765955, 0, 0.642895, 0, 1, 0, -0.642895, 0, -0.765955, 34.9916, 4.50213, -48.7444)
+fov = 70.9503
