@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cy2huy773h2nl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0g7rv"]
+albedo_color = Color(0.290196, 0.00392157, 0.129412, 1)
+
+[node name="Tree" type="CSGCylinder3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.6764, 2.71904, -0.0177307)
+height = 5.05304
+cone = true
+material = SubResource("StandardMaterial3D_0g7rv")

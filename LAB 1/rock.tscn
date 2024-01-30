@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkxak6a1gs7l0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5bpig"]
+albedo_color = Color(0.0117647, 0.0117647, 0.0117647, 1)
+
+[node name="Rock" type="CSGBox3D"]
+transform = Transform3D(0.934055, 0, 0.357129, 0, 1, 0, -0.357129, 0, 0.934055, 2.80942, 0.264736, -5.555)
+size = Vector3(30, 5, 30)
+material = SubResource("StandardMaterial3D_5bpig")

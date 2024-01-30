@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://n73bxmvvpoo4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tl3ps"]
+albedo_color = Color(0.890196, 0.25098, 0, 0.866667)
+
+[node name="lava top" type="CSGSphere3D"]
+transform = Transform3D(6, 0, 0, 0, 3, 0, 0, 0, 6, 1.67853, 16.9539, -4.60546)
+material = SubResource("StandardMaterial3D_tl3ps")
