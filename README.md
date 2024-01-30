@@ -1,2 +1,2 @@
 # LAB-1
-Low poly volcano with trees
+Low poly world - volcano with trees
