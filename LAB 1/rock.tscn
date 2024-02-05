@@ -1,9 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://bkxak6a1gs7l0"]
+[gd_scene load_steps=4 format=3 uid="uid://bkxak6a1gs7l0"]
+
+[ext_resource type="Texture2D" uid="uid://c4w4sv4lhpnj1" path="res://rock.png" id="1_emfkp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_etk8t"]
+albedo_texture = ExtResource("1_emfkp")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5bpig"]
 albedo_color = Color(0.0117647, 0.0117647, 0.0117647, 1)
 
 [node name="Rock" type="CSGBox3D"]
 transform = Transform3D(0.934055, 0, 0.357129, 0, 1, 0, -0.357129, 0, 0.934055, 2.80942, 0.264736, -5.555)
+material_override = SubResource("StandardMaterial3D_etk8t")
 size = Vector3(30, 5, 30)
 material = SubResource("StandardMaterial3D_5bpig")
